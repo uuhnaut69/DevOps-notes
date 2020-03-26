@@ -43,9 +43,16 @@ sudo iptables-save
 ```bash
 wget https://artifacts.elastic.co/downloads/kibana/kibana-6.8.1-x86_64.rpm
 ```
-2. sudo rpm --install kibana-6.8.1-x86_64.rpm
+2. Install
 
-3. Enable port 5601 in order to make it public access, using "iptables -I INPUT -p tcp -m tcp --dport 5601 -j ACCEPT"
+```bash
+sudo rpm --install kibana-6.8.1-x86_64.rpm
+```
+
+3. Enable port 5601 in order to make it public access
+```bash
+iptables -I INPUT -p tcp -m tcp --dport 5601 -j ACCEPT
+```
 
 4. Save IP config
 
