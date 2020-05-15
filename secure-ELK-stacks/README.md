@@ -36,3 +36,7 @@ Or to define password
 ```bash
 bin/elasticsearch-setup-passwords interactive
 ```
+
+6. To authenticaiton in kibana
+
+Add user/password of kibana recently generated and add in kibana.yml
