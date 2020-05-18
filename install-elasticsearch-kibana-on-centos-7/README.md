@@ -28,7 +28,11 @@ sudo rpm --install elasticsearch-6.8.1.rpm
   
   - Find "http.port", delete "#" symbol, and set value to "9200" . And save config file.
   
-4. Enable port 9200 in order to make it public access, using "iptables -I INPUT -p tcp -m tcp --dport 9200 -j ACCEPT"
+4. Enable port 9200 in order to make it public access.
+
+```bash
+iptables -I INPUT -p tcp -m tcp --dport 9200 -j ACCEPT
+```
 
 5. Save IP config
 
